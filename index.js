@@ -13,7 +13,7 @@ const search = document.getElementById("query")
 function run(){
 	fetch('https://movies115.p.rapidapi.com/cartaz', options)
 	.then(response => response.json())
-	.then(response => console.log(response.Array))
+	.then(response => console.log(response))
 
 	.catch(err => console.error(err));
 }
