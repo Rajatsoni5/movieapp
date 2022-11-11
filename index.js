@@ -6,11 +6,15 @@ const options = {
 	}
 };
 
-fetch('https://movies115.p.rapidapi.com/cartaz', options)
-	.then(response => response.json())
-	.then(response => console.log(response))
-	.catch(err => console.error(err));
-
 const main = document.getElementById("section");
 const form = document.getElementById("form")	
 const search = document.getElementById("query")
+
+function run(){
+	fetch('https://movies115.p.rapidapi.com/cartaz', options)
+	.then(response => response.json())
+	.then(response => console.log(response.Array))
+
+	.catch(err => console.error(err));
+}
+run()
