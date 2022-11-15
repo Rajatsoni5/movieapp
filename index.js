@@ -17,4 +17,5 @@ function run(){
 
 	.catch(err => console.error(err));
 }
-run()
+
+run();
